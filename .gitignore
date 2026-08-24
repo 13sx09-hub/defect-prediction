@@ -1,0 +1,13 @@
+# Claude Code local tool config (contains local absolute paths / username)
+.claude/
+
+# abandoned/incomplete scratch work (superseded by day06/project_v1)
+portfolio/
+
+# Jupyter/Python cache
+.ipynb_checkpoints/
+__pycache__/
+
+# OS junk files
+.DS_Store
+Thumbs.db
