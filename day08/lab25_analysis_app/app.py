@@ -10,18 +10,25 @@ def 한글_글꼴_등록하기():
     import os
     from matplotlib import font_manager as fm
 
-    후보_경로들 = [
-        r"C:\Windows\Fonts\malgun.ttf",
-        r"C:\Windows\Fonts\malgunbd.ttf",
-        "/usr/share/fonts/truetype/nanum/NanumGothic.ttf",
-        "/usr/share/fonts/truetype/nanum/NanumGothicBold.ttf",
-    ]
-    for 경로 in 후보_경로들:
+    # 윈도우 - 맑은 고딕은 정해진 자리에 있으니 그대로 등록한다
+    for 경로 in [r"C:\Windows\Fonts\malgun.ttf", r"C:\Windows\Fonts\malgunbd.ttf"]:
         if os.path.exists(경로):
             try:
                 fm.fontManager.addfont(경로)
             except Exception:
                 pass
+
+    # 배포 서버(리눅스) - 정확한 설치 경로를 미리 알 수 없으니, matplotlib이 훑는
+    # 시스템 글꼴 전체에서 파일 이름에 "nanum"이 들어간 것만 찾아 전부 등록한다
+    try:
+        for 경로 in fm.findSystemFonts():
+            if "nanum" in os.path.basename(경로).lower():
+                try:
+                    fm.fontManager.addfont(경로)
+                except Exception:
+                    pass
+    except Exception:
+        pass
 
 
 def 한글_글꼴_파일_찾기(굵게=False):
