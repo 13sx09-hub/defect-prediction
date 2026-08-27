@@ -3,10 +3,33 @@ import pandas as pd  # CSV를 표로 읽고 계산하기 위해 사용
 from datetime import datetime  # 현재 시각을 구하기 위해 사용
 
 
+def 한글_글꼴_등록하기():
+    # 배포 서버(리눅스)는 matplotlib이 글꼴 목록을 한 번 캐시해두는데, packages.txt로 나눔고딕을
+    # 나중에 깔면 이 캐시가 오래돼서 이름만으로는 못 찾을 수 있다 - 파일이 실제로 있으면
+    # matplotlib에 직접 등록해서 캐시와 상관없이 바로 이름으로 찾을 수 있게 한다
+    import os
+    from matplotlib import font_manager as fm
+
+    후보_경로들 = [
+        r"C:\Windows\Fonts\malgun.ttf",
+        r"C:\Windows\Fonts\malgunbd.ttf",
+        "/usr/share/fonts/truetype/nanum/NanumGothic.ttf",
+        "/usr/share/fonts/truetype/nanum/NanumGothicBold.ttf",
+    ]
+    for 경로 in 후보_경로들:
+        if os.path.exists(경로):
+            try:
+                fm.fontManager.addfont(경로)
+            except Exception:
+                pass
+
+
 def 한글_글꼴_파일_찾기(굵게=False):
     # 이 컴퓨터에 실제로 깔린 한글 글꼴 파일을 찾는다
     # 내 컴퓨터(윈도우)는 맑은 고딕, 배포 서버(리눅스, packages.txt로 나눔고딕을 깔아둠)는 나눔고딕을 쓴다
     from matplotlib import font_manager as fm
+
+    한글_글꼴_등록하기()  # 캐시가 오래됐어도 찾을 수 있게 먼저 직접 등록해둔다
 
     후보_이름들 = ["Malgun Gothic", "NanumGothic", "NanumBarunGothic"]
     굵기 = "bold" if 굵게 else "normal"
@@ -368,6 +391,7 @@ with 탭_결과:
 
         # 그래프 안 한글이 네모로 깨지지 않게 한다 - 목록 중 이 컴퓨터에 깔린 첫 번째 글꼴을 자동으로 쓴다
         # (내 컴퓨터는 맑은 고딕, 배포 서버는 packages.txt로 깐 나눔고딕)
+        한글_글꼴_등록하기()  # 배포 서버의 글꼴 캐시가 오래됐어도 이름으로 바로 찾을 수 있게 먼저 등록한다
         plt.rcParams["font.family"] = "sans-serif"
         plt.rcParams["font.sans-serif"] = ["Malgun Gothic", "NanumGothic", "NanumBarunGothic", "DejaVu Sans"]
         plt.rcParams["axes.unicode_minus"] = False  # 마이너스 기호도 깨지지 않게 한다
