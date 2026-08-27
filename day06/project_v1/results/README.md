@@ -1,3 +1,11 @@
+앱 주소 : https://defect-prediction-fwa7tzawkrdkg9nb5q6yhs.streamlit.app
+
+![결과 탭](captures/02_result_tab_full.png)
+
+문진 응답으로 만든 모델이 비만 위험군을 얼마나 잘 가려내는지, 문턱을 옮겨가며 정확도·정밀도·재현율·혼동행렬로 확인하는 화면입니다.
+
+---
+
 # 비만 위험군 선별 프로젝트 (day06/project_v1)
 
 문진(설문) 응답만으로, 비만이 될 위험이 큰 사람을 검사 전에 미리 가려내는 프로젝트입니다.
