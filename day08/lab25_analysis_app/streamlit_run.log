@@ -1,0 +1,49 @@
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+2026-08-27 14:12:45.972 Uvicorn server started on :::8501
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.0.8:8501
+  External URL: http://180.67.203.57:8501
+
+MERG NOT subset; don't know how to subset; dropped
+MERG NOT subset; don't know how to subset; dropped
+C:\Users\13sx0\Desktop\SECOM-PROJECT\day08\lab25_analysis_app\app.py:103: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  글자열 = [c for c in df.select_dtypes(include="object").columns if c != 결과열]
+MERG NOT subset; don't know how to subset; dropped
+MERG NOT subset; don't know how to subset; dropped
+C:\Users\13sx0\Desktop\SECOM-PROJECT\day08\lab25_analysis_app\app.py:103: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  글자열 = [c for c in df.select_dtypes(include="object").columns if c != 결과열]
+MERG NOT subset; don't know how to subset; dropped
+MERG NOT subset; don't know how to subset; dropped
+C:\Users\13sx0\Desktop\SECOM-PROJECT\day08\lab25_analysis_app\app.py:103: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  글자열 = [c for c in df.select_dtypes(include="object").columns if c != 결과열]
+MERG NOT subset; don't know how to subset; dropped
+MERG NOT subset; don't know how to subset; dropped
+C:\Users\13sx0\Desktop\SECOM-PROJECT\day08\lab25_analysis_app\app.py:103: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  글자열 = [c for c in df.select_dtypes(include="object").columns if c != 결과열]
+C:\Users\13sx0\Desktop\SECOM-PROJECT\day08\lab25_analysis_app\app.py:103: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  글자열 = [c for c in df.select_dtypes(include="object").columns if c != 결과열]
+C:\Users\13sx0\Desktop\SECOM-PROJECT\day08\lab25_analysis_app\app.py:103: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  글자열 = [c for c in df.select_dtypes(include="object").columns if c != 결과열]
+MERG NOT subset; don't know how to subset; dropped
+MERG NOT subset; don't know how to subset; dropped
+C:\Users\13sx0\Desktop\SECOM-PROJECT\day08\lab25_analysis_app\app.py:103: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  글자열 = [c for c in df.select_dtypes(include="object").columns if c != 결과열]
+MERG NOT subset; don't know how to subset; dropped
+MERG NOT subset; don't know how to subset; dropped
+C:\Users\13sx0\Desktop\SECOM-PROJECT\day08\lab25_analysis_app\app.py:103: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  글자열 = [c for c in df.select_dtypes(include="object").columns if c != 결과열]
+MERG NOT subset; don't know how to subset; dropped
+MERG NOT subset; don't know how to subset; dropped
